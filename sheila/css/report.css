@@ -1,0 +1,29 @@
+
+
+
+label{
+	display: table-row;
+	text-align: right;
+	
+}
+
+input{
+	display: table-cell;
+	margin-bottom: 10px;
+
+}
+
+div.row{
+	display: table-row;
+	width: 100px
+}
+
+
+
+
+
+
+
+table{
+	margin-bottom: 15px
+}

@@ -1,0 +1,148 @@
+.container-fluidlandingpage{
+    height:100%;
+    padding:0;
+}
+/* .row{
+    height:500px */
+
+.navbar{
+    
+    background-color:lightblue !important;
+
+}
+.searchbtn{
+    background-color: lavender
+}
+.firstrow{
+    background-image: url(../images/wedding.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+.p{
+    color: white;
+}
+.aboutrow{
+    height: auto !important;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+.about{
+    text-align: center;
+    
+}
+.abouttext{
+    text-align: center;
+}
+.services{
+    text-align: center;
+    
+}
+.secondrowtitle{
+    height: 10%;
+    width: 100%;
+}
+.firstrow:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.58);
+    z-index: 100;
+}
+
+.thirdrowtitle{
+    width: 100%
+}
+.fourthrowtitle{
+    width: 100%;
+    height: 10%;
+
+
+
+
+}
+.contactss{
+    padding-left: 150px;
+}
+.contact{
+    margin-top: 50px;
+    text-align: center;
+}
+.footer{
+    background-color:grey;
+    padding: 0%;
+}
+.footer1{
+   
+    color: white;
+}
+.linksfooter a{
+    color: white;
+}
+.footerrow{
+    padding: 0 !important;
+    width: 100%;
+}
+.links{
+    color: white;
+}
+
+
+
+
+
+.firstrowtitle{
+    height: 20%;
+    margin-top: 20%;
+    margin-left: 40%;
+    font-size: 3.0rem;
+    font-family: serif;
+    z-index: 110;
+}
+.logs{
+    list-style: none;
+}
+.firstrowtitle h1{
+    color: #fff;
+}
+.view{
+    color: white;
+    background-color: lightblue;
+}
+.validate-input{
+    margin-left: auto;
+}
+.wrap-input100{
+    margin-top: 20px;
+    
+}
+.input100{
+    width: 80%;
+    height: 40px;
+    background: #f0f0f0;
+    border-color:rgb(173, 216, 230);
+    padding: 2px;
+}
+.input100message{
+    height: 80px;
+    width:80% ;
+    background: #f0f0f0;
+    border-color:rgb(173, 216, 230);
+}
+.contact100-form-btn{
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.z-depth-1-half{
+    margin-left: 70px;
+}
+    
+
+

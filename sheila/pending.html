@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/landing-page.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+		<nav class="navbar navbar-light bg-light">
+		  <a class="navbar-brand" href="#">
+			<img src="images/projectlogo.PNG" width="60" height="40" alt="">
+		  </a>
+		</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html#about">About Us</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+				  aria-haspopup="true" aria-expanded="false">
+				  Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="index.html#services">Catering Services</a>
+				  <a class="dropdown-item" href="index.html#services">Events & Wedding Planning</a>
+				  <a class="dropdown-item" href="index.html#services">Tent Solutions</a>
+				  <a class="dropdown-item" href="index.html#services">Furniture Solutions</a>
+				</div>
+			  </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="rental-catalog.php">
+				Rental Catalog
+			  </a>
+			  
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index#contact">Contact Us</a>
+			</li>
+			
+		  </ul>
+	
+      <ul class="logs">
+
+
+        <div class="notlogged_in"><button class="btn"> <a  href="login.html">
+        Login
+          </a></button>
+          <button class="btn"> <a href="registration.html">
+        Register
+          </a></button>
+          <button class="btn"> <a href="cart.php">
+            Cart
+          </a></button></div>	
+          
+          <div class="logged_in">
+      
+          </a></button>
+          <button class="btn name"> <a href="cart.php"> Cart
+            
+            
+          </a></button>
+
+            <button class="btn"> <a href="pending.html">
+              Pending payments
+            </a></button>
+              <button class="btn"> <a href="mybookings.html">
+              My Bookings
+              </a></button>
+              <button class="btn"> <a href="cart.php">
+                Cart
+              </a></button>
+              <button class="btn logout"> <a href="login.html">
+            
+                Log Out
+                </a></button></div>
+          </ul>
+          </div>
+      
+        
+      
+        </ul>
+      </div>
+	
+	  </nav>
+  <div id="home">
+
+  </div>
+  <div class="container-fluid  container-fluidlandingpage">
+
+    <table class="table table-striped" id="users_table" data-toggle="table"   data-search="true">
+      <thead>
+      <tr>
+          <th scope="col">Id</th>
+        <th scope="col">Invoice  Id</th>
+        <th scope="col">Client email</th>
+        <th scope="col">status</th>
+          <th scope="col">Action</th>
+
+      </tr>
+      </thead>
+      <tbody id="admin_body">
+
+      </tbody>
+    </table>
+
+
+
+
+    <div class="row services">
+
+    </div>
+
+
+
+   
+
+    </div>
+
+      <script src="../jquery/jquery-3.4.1.min.js"></script>
+      <script src="../assets/js/lib/data-table/datatables.min.js"></script>
+      <script src="../assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+      <script src="../assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+      <script src="../assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+      <script src="../assets/js/lib/data-table/jszip.min.js"></script>
+      <script src="../assets/js/lib/data-table/pdfmake.min.js"></script>
+      <script src="../assets/js/lib/data-table/vfs_fonts.js"></script>
+      <script src="../assets/js/lib/data-table/buttons.html5.min.js"></script>
+      <script src="../assets/js/lib/data-table/buttons.print.min.js"></script>
+      <script src="../assets/js/lib/data-table/buttons.colVis.min.js"></script>
+      <script src="../assets/js/init/datatables-init.js"></script>
+      <script >
+
+
+          $(document).ready(function () {
+
+              var client_id=sessionStorage.getItem('client_id');
+
+              $.post("http://localhost/Sheila/api/fetch_user_pending.php",
+                  {user_id:client_id}, function (response, status) {
+
+                      $parse=JSON.parse(response);
+                      $("#total_items").text($parse.length);
+
+                      $('#users_table').DataTable({
+                          searching: false,
+                          "data": $parse,
+                          "columns": [
+                              { "data": "id" },
+                              { "data": "invoice_id" },
+                              { "data": "clien_email" },
+                              { "data": "status" },
+                              {
+                                  "targets": -1,
+                                  "data": null,
+                                  "defaultContent":
+                                      "<button onclick=\"javascript:callJavascriptFunction()\"" +
+                                      " type=\"button\" class=\"btn btn-outline-success btn-sm user\" " +
+                                      "id='" + this.invoice_id + "'>PAY</button>"
+                              } ,
+
+
+
+                          ]
+                      });
+
+                  });
+
+
+
+          });
+
+
+          $('#users_table tbody').on( 'click', 'tr', function () {
+              var tableData = $(this).children("td").map(function () {
+                  return $(this).text();
+              }).get();
+
+              sessionStorage.setItem("pending_invoice_id",tableData[0]);
+
+              window.location.href="http://localhost/Sheila/sheila/pay.html";
+
+
+          } );
+
+
+
+
+
+
+      </script>
+
+
+
+
+
+      <script src="" async defer></script>
+    <script>
+      $(document).ready(function(){
+
+if(sessionStorage.getItem("logged_in_client_name")===null){
+
+  $(".logged_in").hide();
+  $(".notlogged_in").show();
+
+
+}
+else{
+
+$(".logged_in").show();
+$(".notlogged_in").hide();
+
+$(".logout").click(function () {
+
+  sessionStorage.clear();
+
+});
+
+$(".name").text("Welcome "+sessionStorage.getItem("logged_in_client_name"));
+
+
+
+
+}
+
+
+
+$("#formcart").submit(function(event){
+
+event.preventDefault();
+
+
+});
+
+});
+    </script>
+</body>
+
+</html>

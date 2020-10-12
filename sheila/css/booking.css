@@ -1,0 +1,62 @@
+.quantity{
+    width:200px;
+    margin-left: 50px;
+}
+.
+.bookingsformcontainer-fluid{
+    height:100%;
+    padding:0;
+    
+}
+.bookingsrow{
+   
+    padding:0 !important;
+    background-image: url("../images/weddings.jpg");
+        text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    
+}
+.confirmbooking{
+    color: black;
+    margin-left:auto ;
+}
+
+.btnbooking{
+    background-color: #28a745;
+    border-color: #28a745;
+    margin: 5px 0px 0px;
+    padding: 6px 12px;
+    font-family: sans-serif;
+    margin-top: 50px;
+    
+}
+.btnbookingrequest{
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 50%;
+    margin: 5px 0px 0px;
+    padding: 6px 12px;
+    font-family: sans-serif;
+}
+.enquirytextarea{
+    width:100%;
+    margin-left: auto;
+}
+.btnbookingcancel{
+    background-color: #28a745;
+    border-color:#28a745;
+    margin-left: 200px;
+   
+    padding: 6px 12px;
+    font-family: sans-serif;
+}
+.dates{
+    margin-top: 50px;
+}

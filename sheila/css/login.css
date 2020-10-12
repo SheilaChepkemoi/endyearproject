@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+    height:100%;
+    padding:0;
+}
+.loginrow{
+    padding:0 !important;
+    background-image: url("../images/weddings.jpg");
+        text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.main-section {
+    margin: auto;
+    margin-top: 150px;
+    padding: 0px;
+}
+.modal-content {
+    background-color:lightblue;
+    opacity: .95;
+}
+.user-name{
+    margin-top: 70px !important;
+    
+}
+
+
+
+.loginrow:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.48);
+    z-index: 100;
+}
+.navbar{
+    
+    background-color:lightblue !important;
+
+}
+.searchbtn{
+    background-color: lavender
+}
+.user-name{
+    z-index: 110;
+}
+.user-name h1{
+    color: #fff;
+    font-size: 50px;
+}
+.loginrow{
+    height: 500px;
+    width: 100%;
+    margin: 0PX !important;
+}
+.email{
+    width: 100%;
+    margin-left: 60px;
+
+}
+.password{
+    width: 67%;
+    margin-left: 59px;
+}
+.logincol{
+    z-index: 110;
+    height: 100%;
+}
+.link-part{
+background-color: white;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    
+}
+.pass{
+    width: 110%;
+    margin-left: -12px;
+}
+.loginback{
+    background-image: url(../images/weddings.jpg);
+}
+.btn-success{
+    margin-top: 5px;
+}
+.Forgot{
+    color: black;
+    display: block;
+    margin-top: 25px;
+}
+.form-control{
+    width: 70%;
+    margin-left: 60px;
+}
+.footerrow{
+    padding: 0 !important;
+    
+}
+.reg{
+    color: black;
+}
+.footer{
+    background-color:grey;
+}
+.footer1{
+   
+    color: white;
+}
+.linksfooter a{
+    color: white;
+}
+
+    
+

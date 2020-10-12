@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/landing-page.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/projectlogo.PNG" width="60" height="40" alt="">
+      </a>
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#services">Catering Services</a>
+            <a class="dropdown-item" href="#services">Events & Wedding Planning</a>
+            <a class="dropdown-item" href="#services">Tent Solutions</a>
+            <a class="dropdown-item" href="#services">Furniture Solutions</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="nav" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Rental Catalog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"></a>
+            <a class="dropdown-item" href="products-catalog.html#tents">Tents</a>
+            <!-- <div class="allproducts"><h1>Tents</h1></div>
+                      <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="images/tents1.jpeg" width="20" height="200" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Dome tents</h5>
+                            <p class="card-text">This kind of tents are designed from high quality 
+                              and durable fabrics and metal materials,with careful consideration 
+                              on local weather conditions.they are best for weddings,churches and party events.
+                              It is a 100-seater tent.
+                            Kshs 3500-4500</p>
+                            
+                          </div>
+                        </div>
+            
+                      </div> -->
+            <a class="dropdown-item" href="products-catalog.html#chairs">Chairs</a>
+            <a class="dropdown-item" href="products-catalog.html#tables">Tables</a>
+            <a class="dropdown-item" href="products-catalog.html#stemware&barware">Stemware & Barware</a>
+            <a class="dropdown-item" href="products-catalog.html#cutlery">Cutlery</a>
+            <a class="dropdown-item" href="products-catalog.html#plates">Plates</a>
+            <a class="dropdown-item" href="products-catalog.html#cups">Cups</a>
+            <a class="dropdown-item" href="products-catalog.html#mobiletoilets">Mobile toilets</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item book">
+          <a class="nav-link" href="booking-form.php">Book</a>
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 searchbtn my-sm-0" type="submit">Search</button>
+      </form>
+
+      <ul class="logs">
+        <button class="btn"><a href="login.html">
+          My Bookings
+        </a></button>
+
+        <button class="btn"><a href="login.html">
+            Logout
+          </a></button>
+
+        <!-- <button class="btn"> <a href="registration.html">
+            Register
+          </a></button> -->
+
+      </ul>
+    </div>
+
+  </nav>
+  <div id="home">
+
+  </div>
+  <div  style="margin: 20px" id="table_data" class="container-fluid  container-fluidlandingpage">
+
+
+    <div id="content">
+
+
+    <table class="table table-striped" id="users_table" data-toggle="table"   data-search="true">
+      <h2 id="billing_to"></h2>
+      <h3 id="billing_address"></h3>
+      <h3 id="billing_date"></h3>
+      <h3 id="invoice_number"></h3>
+      <div style="margin-top: 30px"></div>
+      <thead>
+      <tr>
+        <th scope="col">Produc Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
+
+      </tr>
+      </thead>
+      <tbody id="admin_body">
+
+      </tbody>
+      <tfoot>
+      <tr>
+        <td></td>
+        <td>Total</td>
+        <td id="total"></td>
+      </tr>
+      </tfoot>
+    </table>
+    </div>
+
+    <button class="btn btn btn-primary btn-lg" id="invoice">Download Invoice</button>
+
+    <div style="margin-top: 300px" class="container" id="contact">
+
+      <!-- Footer -->
+      <footer class="page-footer font-small mdb-color pt-4 footer footerrow">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+          <!-- Footer links -->
+          <div class="row text-center text-md-left mt-3 pb-3 footer1">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Jowath Events</h6>
+              <p>An events rental company that is dedicated to ensure
+                the success of your events.</p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Events</h6>
+              <p>
+                Wedding Events
+              </p>
+              <p>
+                Corporate Events
+              </p>
+              <p>
+                Party Events
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 linksfooter">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Office hours</h6>
+              <p>
+                Mon-Fri: 8:00-6:00 P.M
+              </p>
+              <p>
+                Saturday: 9:00-2:00 P.M
+              </p>
+              <p>
+                Closed on Sundays
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+
+
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fa fa-home mr-3"></i>P.O Box 65114-0628 Ruaraka.</p>
+              <p>
+                <i class='fa fa-envelope mr-3'></i>jowathevents@gmail.com</p>
+              <p>
+                <i class="fa fa-phone mr-3"></i> 0722625097</p>
+              <p>
+
+              </p>
+
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Footer links -->
+
+          <hr>
+
+          <!-- Grid row -->
+          <div class="row d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+
+              <!--Copyright-->
+              <p class="text-center text-md-left">© 2020 Copyright:
+                <!-- <a href="https://mdbootstrap.com/education/bootstrap/">
+            <strong>JOWATH EVENTS SOLUTION, ALL RIGHTS RESERVED</strong>
+          </a> -->
+              </p>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+
+
+                </ul>
+              </div>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+      </footer>
+      <!-- Footer -->
+
+    </div>
+    <script src="../jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+            crossorigin="anonymous"></script>
+    <script >
+
+
+      $("#invoice").click(function () {
+
+        var doc = new jsPDF();
+        doc.addHTML($('#content')[0], 15, 15, {
+
+        }, function() {
+          doc.save('sample-file.pdf');
+        });
+      });
+
+
+      $(document).ready(function () {
+
+
+        fetch_bookings();
+
+        function fetch_bookings(){
+          $("#billing_to").text("Billing To : "+sessionStorage.getItem("client_email"));
+          $("#billing_address").text("Billing Address : "+sessionStorage.getItem("address"));
+          $("#billing_date").text("Billing Date : "+sessionStorage.getItem("booking_date"));
+          $("#invoice_number").text("Invoice Number : "+sessionStorage.getItem("invoice_number"));
+
+
+
+          var url = 'http://localhost/Sheila/api/fetch_booking_info.php';
+          var orderid=sessionStorage.getItem("booking_id");
+
+
+          $.post(url, {order_id:orderid},function (response, status) {
+
+            $parse=JSON.parse(response);
+
+
+            $.each($parse,function (key,value) {
+
+
+              var button='<button class="btn btn btn-outline-success btn-sm">VIEW INFO</button>&nbsp;';
+              var total =0;
+
+              $admin_body= $("#users_table");
+              var table_row=$("<tr>")
+                      .append($("<td>").append(value.product))
+                      .append($("<td>").append(value.qntty))
+                      .append($("<td>").append("Kshs "+value.price))
+                      .append($("<td>").append("Kshs "+value.total))
+
+              ;
+
+              $admin_body.append(table_row);
+
+
+
+
+            });
+
+
+          });
+
+
+          $.post("http://localhost/Sheila/api/fetch_booking_info_total.php",
+                  {order_id:orderid},function (response, status) {
+
+                    $parse=JSON.parse(response);
+
+
+                    $.each($parse,function (key,value) {
+
+
+
+                      $("#total").append(" Kshs "+value.summation);
+
+
+
+
+
+
+
+                    });
+
+
+                  });
+
+
+        }
+
+
+
+
+      });
+
+
+    </script>
+
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script>
+  $("#invoice").click(function () {
+
+    html2canvas(document.getElementById('content'), {
+      onrendered: function (canvas) {
+        var data = canvas.toDataURL();
+        var docDefinition = {
+          content: [{
+            image: data,
+            width: 500
+          }]
+        };
+        pdfMake.createPdf(docDefinition).download("myexpenditure.pdf");
+      }
+    });
+
+  });
+</script>
+
+
+</html>

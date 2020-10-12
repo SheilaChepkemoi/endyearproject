@@ -1,0 +1,250 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Item</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+</head>
+<body>
+<!-- Left Panel -->
+
+<aside id="left-panel" class="left-panel">
+    <nav class="navbar navbar-expand-sm navbar-default">
+
+        <div id="main-menu" class="main-menu collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="manage_admin.html"><i class="menu-icon ti-briefcase"></i>Administrator </a>
+                </li>
+
+                <!-- <li class="menu-item-has-children dropdown" >
+                    <a href=""> <i class="menu-icon ti-home"></i>Home</a>
+                </li> -->
+                <li class="menu-item-has-children dropdown active" >
+                    <a href="manage_items.html"> <i class="menu-icon ti-list"></i>Item List</a>
+                </li>
+                <li class="menu-item-has-children dropdown " >
+                    <a href="manage_clients.html"> <i class="menu-icon fa fa-users"></i>Manage Clients</a>
+                </li>
+                <li class="menu-item-has-children dropdown " >
+                    <a href="manage_bookings.html"> <i class="menu-icon fa fa-suitcase"></i>Bookings</a>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="payments.html"> <i class="menu-icon fa ti-money"></i>Payments</a>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="manage_invoice.html"> <i class="menu-icon fa ti-money"></i>Invoices</a>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="item_sales.html"> <i class="menu-icon ti-list "></i>Item Sales</a>
+                </li>
+                <li class="menu-item-has-children dropdown" >
+                    <a href="sales.html"> <i class="menu-icon fa ti-money "></i>Sales</a>
+                </li>
+
+                <li class="menu-item-has-children dropdown" >
+                    <a href="manage_feedback.html"> <i class="menu-icon fa ti-comment"></i>Feedback</a>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+</aside><!-- /#left-panel -->
+
+<!-- Left Panel -->
+
+<!-- Right Panel -->
+
+<div id="right-panel" class="right-panel">
+
+    <!-- Header-->
+    <header id="header" class="header">
+        <div class="top-left">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./">
+                    <img src="images/projectlogo.PNG" width="60" height="40" alt=""></a>
+                <a class="navbar-brand hidden" href="./"></a>
+                <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="header-menu">
+                <div class="header-left">
+                    
+                  
+                    
+                </div>
+
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                    </a>
+
+                    <div class="user-menu dropdown-menu">
+                       
+
+                        <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- /header -->
+    <!-- Header-->
+
+
+    <div class="content">
+        <div class="animated fadeIn">
+
+            <div class="name_class">
+
+            <form id="edit_name" action="http://localhost/Sheila/api/edit_item.php" method="post">
+                <div class="row">
+                <div class=" col-lg-8">
+                    <input placeholder="Item Name" onkeypress="return (event.charCode > 64 && 
+                    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"  id="name" name="name" type="text" class="form-control" required="true" aria-required="true" aria-invalid="false">
+                </div>
+
+                <div class="col-lg-4">
+                    <button id="payment-button" type="submit" class="btn btn-sm btn-info btn-block">
+                        <span id="payment-button-amount">UPDATE</span>
+                        <span id="payment-button-sending" style="display:none;">Sending…</span>
+                    </button>
+                </div>
+
+                </div>
+
+            </form>
+            </div>
+            <div style="margin-top: 10px" class="price_class">
+
+
+                <form  id="edit_price" action="http://localhost/Sheila/api/edit_item.php" method="post">
+                    <div class="row">
+                        <div class=" col-lg-8">
+                            <input id="price" placeholder="Price" name="price" type="number" class="form-control" required="true" aria-required="true" aria-invalid="false">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button id="price-button" type="submit" class="btn btn-sm btn-info btn-block">
+                                <span id="price-button-amount">UPDATE</span>
+                                <span id="price-button-sending" style="display:none;">Sending…</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div style="margin-top: 10px" class="stock_class">
+
+                <form   id="edit_stock" action="http://localhost/Sheila/api/edit_item.php" method="post">
+                    <div class="row">
+                        <div class=" col-lg-8">
+                            <input id="stock" placeholder="stock" name="stock" type="number" class="form-control" required="true" aria-required="true" aria-invalid="false">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button id="stock-button" type="submit" class="btn btn-sm btn-info btn-block">
+                                <span id="stock-button-amount">UPDATE</span>
+                                <span id="stock-button-sending" style="display:none;">Sending…</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+
+            <div style="margin-top: 10px" class="stock_class">
+
+                <form id="edit_image" action="http://localhost/Sheila/api/edit_item.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="">
+                            <input id="item_id" placeholder="item_id" name="item_id" type="hidden" class="form-control" required="true" aria-required="true" aria-invalid="false">
+                        </div>
+                        <div class=" col-lg-8">
+                            <input name="image" id="image" type="file" class="form-control"  required="true" aria-required="true" aria-invalid="false">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button id="image-button" type="submit" class="btn btn-sm btn-info btn-block">
+                                <span id="image-button-amount">UPDATE</span>
+                                <span id="image-button-sending" style="display:none;">Sending…</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <div style="margin-top: 10px" class="price_class">
+
+
+
+                <form  id="edit_description" action="http://localhost/Sheila/api/edit_item.php" method="post">
+                    <div class="row">
+                        <div class=" col-lg-8">
+                            <div><textarea name="description" id="description" rows="3" placeholder="Decsription..." class="form-control"></textarea></div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button id="description-button" type="submit" class="btn btn-sm btn-info btn-block">
+                                <span id="description-button-amount">UPDATE</span>
+                                <span id="description-button-sending" style="display:none;">Sending…</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+
+
+        </div><!-- .animated -->
+    </div><!-- .content -->
+
+    <div class="clearfix"></div>
+
+
+
+</div><!-- /#right-panel -->
+
+<!-- Right Panel -->
+
+<!-- Scripts -->
+<script src="jquery/jquery-3.4.1.min.js"></script>
+<script src="javascript/edit_items.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>

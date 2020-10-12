@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="../jquery/jquery-3.4.1.min.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+		<nav class="navbar navbar-light bg-light">
+		  <a class="navbar-brand" href="#">
+			<img src="images/projectlogo.PNG" width="60" height="40" alt="">
+		  </a>
+		</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html#about">About Us</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+				  aria-haspopup="true" aria-expanded="false">
+				  Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="index.html#services">Catering Services</a>
+				  <a class="dropdown-item" href="index.html#services">Events & Wedding Planning</a>
+				  <a class="dropdown-item" href="index.html#services">Tent Solutions</a>
+				  <a class="dropdown-item" href="index.html#services">Furniture Solutions</a>
+				</div>
+			  </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="rental-catalog.php">
+				Rental Catalog
+			  </a>
+			  
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index#contact">Contact Us</a>
+			</li>
+			
+		  </ul>
+	
+		 
+		  <ul class="logs">
+	
+			
+	
+			<button class="btn"> <a href="login.html">
+			Login
+			  </a></button>
+	
+		  </ul>
+		</div>
+	
+	  </nav>
+
+
+	<div class="container-fluid logincontainerfluid">
+
+		<div class="row loginrow">
+			<div class="col-md-3">
+
+			</div>
+			<div class="col-md-6 logincol">
+				<div class="user-name">
+					<h1>Register</h1>
+					<form id="register_form"  method="post" action="http://localhost/Sheila/api/create_client.php">
+						<div class="form-group">
+							<input type="text" id="username" name="username"
+							 class="form-control client-name-edit" placeholder="Enter your full name"
+							 pattern="\D+"/>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email"
+							 class="form-control email-edit" placeholder="Enter your Email Address">
+						</div>
+						<div class="form-group">
+							<input type="text" id="phone" name="phone"
+							 class="form-control phone-number-edit"
+							 placeholder="Phone number" pattern="07\d{8}"
+							 title="Insert phone number in the format'07xxxxxxxx'"/>
+						</div>
+						<div class="form-group">
+							<input type="password" id="password" name="password"
+							 class="form-control password-edit" placeholder="Password"
+							 title="Set your password using characters, numbers and "/>
+
+						</div>
+						<div class="form-group">
+							<input id="confirm" type="password" class="form-control confirm-password-edit"
+								   placeholder="Confirm password">
+						</div>
+						<button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+					</form>
+
+						</div>
+						<!-- <div class="form-input">
+                            <div class="form-group pass">
+                                <input type="password" class="form-control password" placeholder="Password"> 
+                            </div> -->
+
+
+						<!-- <a class="Forgot" href="#">Forgot password?</a> -->
+
+
+				</div>
+
+			</div>
+			<div class="col-md-3">
+
+			</div>
+		</div>
+		<!-- <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                
+
+                
+                <div class="col-12 form-input">
+                    
+            </div>
+            <div class="column-12 link-part">
+                
+            </div>
+            </div>
+        </div> -->
+
+		<footer class="page-footer font-small mdb-color pt-4 footer footerrow">
+
+			<!-- Footer Links -->
+			<div class="container text-center text-md-left">
+	  
+			  <!-- Footer links -->
+			  <div class="row text-center text-md-left mt-3 pb-3 footer1">
+	  
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Jowath Events</h6>
+				  <p>An events rental company that is dedicated to ensure
+					the success of your events.</p>
+				</div>
+				<!-- Grid column -->
+	  
+				<hr class="w-100 clearfix d-md-none">
+	  
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Events</h6>
+				  <p>
+					Wedding Events
+				  </p>
+				  <p>
+					Corporate Events
+				  </p>
+				  <p>
+					Party Events
+				  </p>
+	  
+				</div>
+				<!-- Grid column -->
+	  
+				<hr class="w-100 clearfix d-md-none">
+	  
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 linksfooter">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Office hours</h6>
+				  <p>
+					Mon-Fri: 8:00-6:00 P.M
+				  </p>
+				  <p>
+					Saturday: 9:00-2:00 P.M
+				  </p>
+				  <p>
+					Closed on Sundays
+				  </p>
+				</div>
+	  
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+	  
+				<!-- Grid column -->
+				<!-- <div class="container">
+						<a href="https://twitter.com/el_alturas" class="btn btn-social-icon btn-twitter" target="_blank">
+						  <span class="fa-stack fa-lg">
+						<i class="fa fa-square-o fa-stack-2x"></i>
+						<i class="fa fa-twitter fa-stack-1x"></i>
+					  </span>
+						</a>
+						<a href="https://twitter.com/el_alturas" class="btn btn-social-icon btn-youtube" target="_blank">
+						  <span class="fa-stack fa-lg">
+						<i class="fa fa-square-o fa-stack-2x"></i>
+						<i class="fa fa-youtube-square fa-stack-1x"></i>
+					  </span>
+						</a>
+					  </div> -->
+	  
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+				  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+				  <p>
+					<i class="fa fa-home mr-3"></i>P.O Box 65114-0628 Ruaraka.</p>
+				  <p>
+					<i class='fa fa-envelope mr-3'></i>jowatheevents@gmail.com</p>
+				  <p>
+					<i class="fa fa-phone mr-3"></i> 0796528356</p>
+				  <p>
+	  
+				  </p>
+	  
+	  
+				</div>
+				<!-- Grid column -->
+	  
+			  </div>
+			  <!-- Footer links -->
+	  
+			  <hr>
+	  
+			  <!-- Grid row -->
+			  <div class="row d-flex align-items-center">
+	  
+				<!-- Grid column -->
+				<div class="col-md-7 col-lg-8">
+	  
+				  <!--Copyright-->
+				  <p class="text-center text-md-left">© 2020 Copyright:Designed by Sheila Chepkemoi
+					<!-- <a href="https://mdbootstrap.com/education/bootstrap/">
+							<strong>JOWATH EVENTS SOLUTION, ALL RIGHTS RESERVED</strong>
+						  </a> -->
+				  </p>
+	  
+				</div>
+				<!-- Grid column -->
+	  
+				<!-- Grid column -->
+				<div class="col-md-5 col-lg-4 ml-lg-0">
+	  
+				  <!-- Social buttons -->
+				  <div class="text-center text-md-right">
+					<ul class="list-unstyled list-inline">
+					  <li class="list-inline-item">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						  <i class="fa fa-facebook-f"></i>
+						</a>
+					  </li>
+					  <li class="list-inline-item">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						  <i class="fa fa-whatsapp"></i>
+						</a>
+					  </li>
+					  
+					  <li class="list-inline-item">
+						<a class="btn-floating btn-sm rgba-white-slight mx-1">
+						  <i class="fa fa-envelope"></i>
+						</a>
+					  </li>
+	  
+	  
+					</ul>
+				  </div>
+	  
+				</div>
+				<!-- Grid column -->
+	  
+			  </div>
+			  <!-- Grid row -->
+	  
+			</div>
+			<!-- Footer Links -->
+	  
+		  </footer>
+		<!-- Footer -->
+		<!-- Footer -->
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+
+$("#register_form").submit(function (e) {
+
+	e.preventDefault();
+
+	var confirm =$("#confirm").val();
+
+	var password=$("#password").val();
+
+
+	if (confirm !=password) {
+
+		alert("Password do not match");
+
+	}
+	else{
+		var form_data = $(this).serializeArray();
+	var requestinfo=$(this);
+	$.ajax({
+		url: requestinfo.attr("action"),
+		type: requestinfo.attr("method"),
+		data: form_data,
+		success: function (response) {
+
+			alert(response);
+
+			window.location.href="http://localhost/Sheila/sheila/login.html";
+
+		},
+		error: function (response) {
+			alert('ajax failed');
+			// ajax error callback
+		},
+
+	});
+
+	}
+
+
+
+});
+
+});
+</script>
+<script>
+	function CheckPassword(inputtxt) 
+{ 
+var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+if(inputtxt.value.match(passw)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Wrong...!')
+return false;
+}
+}
+
+</script>
+
+
+</html>

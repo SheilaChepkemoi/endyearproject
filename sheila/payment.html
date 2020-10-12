@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/payment.css">
+</head>
+
+<body>
+    <div class="container-fluid payment">
+        <div class="container paymentmode">
+            <div class="row payment row">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-6 paymentcolumn">
+                    <div class="payment-form">
+                        <div class="form-header">
+                            <h1>Payment</h1>
+                            <div class="paymenttext">
+                                <p>Select your preffered mode of payment</p>
+                                <div id="accordion">
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                MPesa
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <div class="row">
+                                                <form>
+                                                    <div class="form-group paymentname">
+                                                      <input type="text" class="form-control " placeholder="Name">
+                                                    </div>
+                                                    <div class="form-group paymentname">
+                                                        <input type="email" class="form-control " placeholder="Email">
+                                                      </div>
+                                                      <div class="form-group paymentname">
+                                                        <input type="text" class="form-control " placeholder="Phone number">
+                                                      </div>
+                                                      <div class="form-group paymentname">
+                                                        <input type="text" class="form-control " placeholder="Enter Mpesa code">
+                                                      </div>
+                                                </form>
+                                               
+                                                    
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                Visa
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="form-group paymentvisa">
+                                                        <input type="text" class="form-control " placeholder="Card Number">
+                                                      </div>
+                                                      <div class="form-group paymentvisa">
+                                                        <input type="text" class="form-control " placeholder="Cardholder's Name">
+                                                      </div>
+                                                      <div class="form-group paymentvisa">
+                                                        <span class="form-label">Expiration Date</span>
+                                                        <input class="form-control" type="date" required>
+                                                      </div>
+                                                      
+                                                      <div class="form-group">
+                                                        <input type="email" class="form-control paymentvisa" placeholder="Email">
+                                                      </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/landing-page.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+		<nav class="navbar navbar-light bg-light">
+		  <a class="navbar-brand" href="#">
+			<img src="images/projectlogo.PNG" width="60" height="40" alt="">
+		  </a>
+		</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html#about">About Us</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+				  aria-haspopup="true" aria-expanded="false">
+				  Services
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="index.html#services">Catering Services</a>
+				  <a class="dropdown-item" href="index.html#services">Events & Wedding Planning</a>
+				  <a class="dropdown-item" href="index.html#services">Tent Solutions</a>
+				  <a class="dropdown-item" href="index.html#services">Furniture Solutions</a>
+				</div>
+			  </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="rental-catalog.php">
+				Rental Catalog
+			  </a>
+			  
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index#contact">Contact Us</a>
+			</li>
+			
+		  </ul>
+	
+		 
+		  <ul class="logs">
+
+
+        <div class="notlogged_in"><button class="btn"> <a href="login.html">
+        Login
+          </a></button>
+          <button class="btn"> <a href="registration.html">
+        Register
+          </a></button>
+          <button class="btn"> <a href="cart.php">
+            Cart
+          </a></button></div>	
+          
+          <div class="logged_in">
+      
+          </a></button>
+          <button class="btn name"> <a href="cart.php"> Cart
+            
+            
+          </a></button>
+          
+          
+        <button class="btn"> <a href="login.html">
+            
+            Log Out
+            </a></button>
+            
+
+          </div>
+      
+        
+      
+        </ul>
+      </div>
+	
+	  </nav>
+  <div id="home">
+
+  </div>
+  <div class="container-fluid  container-fluidlandingpage">
+
+
+
+    <table class="table table-striped" id="users_table" data-toggle="table"   data-search="true">
+      <thead>
+      <tr>
+        <th scope="col">Booking  Id</th>
+        <th scope="col">Client email</th>
+        <th scope="col">Booking Date</th>
+        <th scope="col">Pick Up date</th>
+        <th scope="col">Return Date</th>
+        <th scope="col">Address</th>
+        <th scope="col">Guests</th>
+        <th scope="col">Type</th>
+        <!-- <th scope="col">Action</th> -->
+      </tr>
+      </thead>
+      <tbody id="admin_body">
+
+      </tbody>
+    </table>
+
+    <div style="margin-top: 300px" class="container" id="contact">
+
+      <!-- Footer -->
+     
+      <!-- Footer -->
+
+    </div>
+    <script src="../jquery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            fetch_bookings();
+
+            function fetch_bookings(){
+
+
+
+                var url = 'http://localhost/Sheila/api/fetch_user_booking.php';
+                var user_id=sessionStorage.getItem("client_id");
+
+
+                $.post(url, {user_id:user_id},function (response, status) {
+
+                    $parse=JSON.parse(response);
+
+                    $.each($parse,function (key,value) {
+
+
+                        var button='<button class="btn btn btn-outline-success btn-sm">VIEW INFO</button>&nbsp;';
+                        $admin_body= $("#users_table");
+                        var table_row=$("<tr>")
+                            .append($("<td>").append(value.booking_id))
+                            .append($("<td>").append(value.client_email))
+                            .append($("<td>").append(value.booking_date))
+                            .append($("<td>").append(value.pick_up_date))
+                            .append($("<td>").append(value.return_date))
+                            .append($("<td>").append(value.address))
+                            .append($("<td>").append(value.number_of_guets))
+                            .append($("<td>").append(value.event_type))
+                            .append($("<td>").append(button))
+                        ;
+                        table_row.click(function () {
+
+
+                            sessionStorage.setItem("booking_id",value.booking_id);
+                            sessionStorage.setItem("address",value.address);
+                            sessionStorage.setItem("booking_date",value.booking_date);
+                            sessionStorage.setItem("invoice_number",value.booking_id);
+                            sessionStorage.setItem("client_email",value.client_email);
+
+                            window.location.href="http://localhost/Sheila/sheila/mybookings_info.html";
+
+
+
+                        });
+                        $admin_body.append(table_row);
+
+
+
+
+                    });
+
+
+                });
+
+
+            }
+
+
+
+
+        });
+
+
+    </script>
+
+    <script src="" async defer></script>
+    <script>
+      $(document).ready(function(){
+
+if(sessionStorage.getItem("logged_in_client_name")===null){
+
+  $(".logged_in").hide();
+  $(".notlogged_in").show();
+
+
+}
+else{
+
+$(".logged_in").show();
+$(".notlogged_in").hide();
+
+$(".name").text("Welcome "+sessionStorage.getItem("logged_in_client_name"));
+
+
+
+
+}
+
+
+
+$("#formcart").submit(function(event){
+
+event.preventDefault();
+
+
+});
+
+});
+    </script>
+</body>
+
+</html>

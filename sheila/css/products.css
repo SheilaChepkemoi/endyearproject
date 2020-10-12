@@ -1,0 +1,53 @@
+/* .card {
+    margin: 10px;
+} */
+.row1s{
+    height: 700px;  
+}
+.row2s{
+    height: 600px;
+}
+
+.row3s{
+    height: 600px;
+}
+.row4s{
+    height: 600px;
+}
+.row5s{
+    height: 600px;
+}
+.row6s{
+    height: 600px;
+}
+.row7s{
+    height: 600px;
+}
+.row8s{
+    height: 600px;
+}
+.allproducts{
+    width: 100%;
+    text-align: center;
+}
+.navbar{
+    
+    background-color:lightblue !important;
+
+}
+.searchbtn{
+    background-color: lavender
+}
+.footer{
+    background-color:grey;
+}
+.footer1{
+   
+    color: white;
+}
+.linksfooter a{
+    color: white;
+}
+.productss{
+    background-color: gainsboro;
+}
